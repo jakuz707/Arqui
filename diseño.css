@@ -1,0 +1,178 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+body {
+    background-color: #6d4b8e; /* Color de fondo */
+    margin: 0;
+    padding: 20px; /* Espacio interno para evitar contenido pegado al borde */
+    font-family: "Comfortaa", sans-serif; /* Fuente general */
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra horizontalmente */
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+    text-align: center;
+    background-size: contain; /* Ajusta la imagen al ancho del viewport */
+}
+
+.container {
+    width: 100%;
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    background-color: #efdfff; /* Fondo blanco para el contenido */
+    padding: 20px; /* Espacio interno dentro del contenedor */
+}
+
+h1 {
+    font-family: "Jura", sans-serif; /* Fuente para el título */
+    text-align: center;
+    font-size: 40px; /* Tamaño más grande */
+}
+
+h2 {
+    font-family: "Jura", sans-serif; /* Fuente para el título */
+    text-align: center;
+}
+
+/* Menú de navegación superior */
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    background-color: #efdfff;
+    border-bottom: 2px solid #bdadda;
+    margin-bottom: 20px;
+}
+
+    .navbar li a {
+        text-decoration: none;
+        font-family: "Jura", sans-serif;
+        color: #7400c6;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+
+        .navbar li a:hover {
+            background-color: #cf9fff;
+            border-radius: 5px;
+        }
+
+/* Hero principal */
+.hero {
+    text-align: left;
+    margin: 40px 0;
+}
+
+    .hero h1 {
+        font-family: "Jura", sans-serif;
+        font-size: 36px;
+        color: #333;
+    }
+
+    .hero h2 {
+        font-family: "Comfortaa", sans-serif;
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: left;
+}
+
+/* Estilo del tooltip */
+.tooltip {
+    position: relative; /* Relativo al contenedor (en este caso, "Enlaces") */
+    display: inline-block;
+    cursor: pointer; /* Añade un puntero para indicar interactividad */
+}
+
+.tooltip-text {
+    visibility: hidden; /* Oculta el tooltip inicialmente */
+    opacity: 0; /* Comienza transparente */
+    background-color: #bdadda; /* Fondo */
+    color: #fff; /* Texto */
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 110%; /* Ajusta para que el tooltip esté más cerca del texto */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Asegura que el tooltip esté encima */
+    white-space: nowrap;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: opacity 0.3s ease; /* Efecto suave */
+    pointer-events: auto; /* Asegura que el mouse pueda interactuar */
+}
+
+/* Muestra el tooltip al pasar el mouse */
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1; /* Aparece */
+}
+
+
+.tooltip-text ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .tooltip-text ul li {
+        margin: 5px 0;
+    }
+
+        .tooltip-text ul li a {
+            text-decoration: none;
+        }
+
+            .tooltip-text ul li a:hover {
+                text-decoration: underline; /* Subraya al pasar el mouse */
+            }
+
+footer {
+    background-color: #efdfff; /* Fondo suave */
+    color: #333; /* Texto oscuro */
+    padding: 20px 10px;
+    border-top: 2px solid #bdadda; /* Línea decorativa */
+    font-size: 14px;
+    text-align: center; /* Centra todo */
+    margin-top: 40px;
+}
+
+    footer h3 {
+        font-family: "Jura", sans-serif;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    footer a {
+        color: #7400c6;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        footer a:hover {
+            text-decoration: underline; /* Subrayado al pasar el cursor */
+        }
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    gap: 10px;
+}
+
+    .social-links li {
+        display: inline;
+        margin: 0 5px;
+    }
+
+
+
+

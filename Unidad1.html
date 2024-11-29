@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Unidad 1</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Unidad1.html">Unidad 1</a></li>
+                    <li><a href="Unidad2.html">Unidad 2</a></li>
+                    <li><a href="Unidad3.html">Unidad 3</a></li>
+                    <li><a href="Unidad4.html">Unidad 4</a></li>
+                    <li><a href="Practicas.html">Prácticas</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="hero">
+            <h2>1.1.1 Modelos de arquitectura</h2><hr />
+            <h>1. Clásicos (Von Neumann y Harvard)</h><br />
+            <img src="images/1.png" width="400">
+            <p>- Von Neumann: Propone que las instrucciones y los datos se almacenan en la misma memoria. Utiliza un único bus para transportar datos e instrucciones, lo que puede causar un "cuello de botella" (limitación en la velocidad).<br></p>
+            <p>- Harvard: Separa la memoria para datos y para instrucciones, lo que permite mayor eficiencia y velocidad.<br></p>
+
+            <h>2. Segmentados</h>
+            <p>- Divide el procesamiento en etapas o segmentos, donde cada parte del hardware realiza una función específica de manera concurrente.<br></p>
+
+            <h>3. De multiprocesamiento</h>
+            <p>- Involucra múltiples procesadores trabajando en paralelo para ejecutar varias tareas simultáneamente. Mejora el rendimiento en sistemas con alta demanda de procesamiento.<br></p>
+
+            <h2>1.1.2 Análisis de los componentes</h2><hr />
+            <h>1. Procesador (CPU)</h>
+            <p>- Encargado de interpretar y ejecutar instrucciones.<br></p>
+
+            <h>2. Memoria</h>
+            <p>- Almacena temporalmente las instrucciones y datos necesarios para la ejecución.<br></p>
+
+            <h>3. Dispositivos de entrada/salida</h>
+            <p>- Permiten la interacción entre el usuario y la computadora (teclado, pantalla, impresoras, etc.).<br></p>
+            <br />
+            <img src="images/2.jpg" width="400">
+
+            <h2>1.2.1 Arquitecturas</h2><hr />
+            <h>- CISC (Complex Instruction Set Computing)</h>
+            <p>- Usa un conjunto amplio de instrucciones, muchas de ellas complejas. Ejemplo: Procesadores Intel x86.<br></p>
+
+            <h>- RISC (Reduced Instruction Set Computing)</h>
+            <p>- Usa un conjunto reducido de instrucciones simples, optimizadas para ejecutarse más rápido. Ejemplo: ARM (usado en dispositivos móviles).<br></p>
+            <br />
+            <img src="images/3.jpg" width="400">
+
+            <h2>1.2.1.1 Unidad Central de Procesamiento (CPU)</h2><hr />
+            <p>- Compuesta por:<br></p>
+            <p>- Unidad de Control: Dirige el flujo de datos e instrucciones dentro del procesador.<br></p>
+            <p>- Unidad Aritmético Lógica (ALU): Realiza cálculos matemáticos y operaciones lógicas.<br></p>
+            <p>- Registros: Almacenan datos temporalmente para un acceso rápido.<br></p>
+            <br />
+            <img src="images/4.jfif" width="400">
+
+            <h2>1.2.1.2 Unidad Aritmético-Lógica (ALU)</h2><hr />
+            <br />
+            <img src="images/5.jfif" width="400">
+            <p>- Realiza las siguientes operaciones:<br></p>
+            <p>- Aritméticas: Suma, resta, multiplicación, división.<br></p>
+            <p>- Lógicas: AND, OR, NOT, XOR.<br></p>
+            <p>- Comparaciones: Igual, mayor que, menor que.<br></p>
+
+            <h2>1.2.1.3 Registros</h2><hr />
+            <p>- Memoria ultrarrápida dentro del procesador.<br></p>
+            <p>- Tipos:<br></p>
+            <p>- Registros de propósito general: Almacenan datos temporales.<br></p>
+            <p>- Registros de propósito específico: Ejemplo, contador de programa (PC), puntero de pila (SP).<br></p>
+            <br />
+            <img src="images/7.gif" width="400">
+            <h2>1.2.1.4 Buses</h2><hr />
+            <p>- Sistemas de comunicación que interconectan los componentes.<br></p>
+            <p>- Tipos:<br></p>
+            <p>- Bus de datos: Transporta datos entre CPU, memoria y dispositivos.<br></p>
+            <p>- Bus de direcciones: Identifica la ubicación en la memoria a la que se quiere acceder.<br></p>
+            <p>- Bus de control: Coordina las operaciones de los demás buses.<br></p>
+            <br />
+            <img src="images/6.png" width="400">
+
+            <h2>1.2 Memoria</h2><hr />
+            <h>1.2.2.1 Conceptos básicos del manejo de memoria</h>
+            <p>- Jerarquía de memoria: Registros → Caché → Memoria principal (RAM) → Memoria secundaria (Disco duro).<br></p>
+            <p>- Memoria virtual: Simulación de una memoria más grande usando espacio en disco.<br></p>
+
+            <h2>1.2.2.2 Memoria principal</h2><hr />
+            <p>- RAM (Random Access Memory): Volátil, almacena datos temporales.<br></p>
+            <p>- ROM (Read Only Memory): No volátil, contiene instrucciones esenciales (como el BIOS).<br></p>
+
+            <h2>1.2.2.3 Memoria caché</h2><hr />
+            <p>- Memoria rápida ubicada cerca del procesador. Funciona como un puente entre la CPU y la memoria principal.<br></p>
+            <p>- Tipos:<br></p>
+            <p>- L1: Integrada dentro del procesador, muy rápida pero pequeña.<br></p>
+            <p>- L2: Más grande que L1, pero más lenta.<br></p>
+            <p>- L3: Compartida entre núcleos, aún más grande pero más lenta.<br></p>
+            <br />
+            <img src="images/8.jfif" width="400">
+
+            <h2>1.2.5 Interrupciones</h2><hr />
+            <p>- Definición: Señales enviadas al procesador para indicar que debe detener su tarea actual y atender un evento específico.<br></p>
+            <p>- Tipos:<br></p>
+            <p>- Por hardware: Generadas por dispositivos externos (teclados, impresoras).<br></p>
+            <p>- Por software: Provocadas por el propio programa para solicitar servicios del sistema operativo.<br></p>
+
+            <main />
+            <footer>
+                <div class="footer-contact">
+                    <h3>Contacto</h3>
+                    <p>Correo: <a href="mailto:L22050752@saltillo.tecnm.mx">L22050752@saltillo.tecnm.mx</a></p>
+                    <p>Redes Sociales:</p>
+                    <ul class="social-links">
+                        <li><a href="https://www.instagram.com/jazkwm" target="_blank">Instagram</a></li>
+                        <li><a href="https://github.com/jakuz707" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-credits">
+                    <p>Sofía Jazmín González Cázares </p>
+                </div>
+            </footer>
+    </div>
+</body>
+</html>
